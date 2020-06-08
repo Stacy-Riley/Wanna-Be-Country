@@ -1,10 +1,49 @@
-body{
+.body {
 	border: 20px solid #bdc3c7;
 	font-family: Source Sans Pro;
 	padding:20px;
 	width: 80%;
 	max-width: 700px;
-	margin: 20px auto;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.jumbotron {
+	background-image: url(../img/main-dirt-road.jpg);
+	background-repeat: no repeat;
+	background-size: cover;
+	/*opacity: 0.5;*/
+}
+
+/* Nav Bar */
+nav {
+	float: right;
+    padding: 0px 0px;
+    margin: 0;
+}
+
+nav ul li{
+    display: inline-block;
+}
+
+nav ul li a {
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 18px;
+    color: #828282;
+    padding-left: 40px;
+}
+
+.container {
+	clear: both;
+	height: 300px;
+}
+
+.display-title {
+	font-size: 50px;
+	color: green;
+	padding-left: 10px;
+	padding-top: 10px;
 }
 
 

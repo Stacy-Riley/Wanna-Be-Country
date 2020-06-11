@@ -1,9 +1,9 @@
 .body {
 	border: 20px solid #bdc3c7;
-	font-family: Source Sans Pro;
+	font-family: 'Lora', serif;
 	padding:20px;
 	width: 80%;
-	max-width: 700px;
+	max-width: 750px;
 	margin-left: auto;
 	margin-right: auto;
 }
@@ -12,7 +12,7 @@
 	background-image: url(../img/main-dirt-road.jpg);
 	background-repeat: no repeat;
 	background-size: cover;
-	/*opacity: 0.5;*/
+	margin-bottom: 35px;
 }
 
 /* Nav Bar */
@@ -31,7 +31,9 @@ nav ul li a {
     text-decoration: none;
     font-size: 18px;
     color: #828282;
-    padding-left: 40px;
+    padding-left: 20px;
+    padding-right: 10px;
+    font-weight: bold;
 }
 
 .container {
@@ -40,16 +42,31 @@ nav ul li a {
 }
 
 .display-title {
-	font-size: 50px;
-	color: green;
-	padding-left: 10px;
-	padding-top: 10px;
+	font-size: 3.0rem;
+	color: #537c59;
+	padding: 50px 0 0 10px;
 }
 
+.display-subtitle {
+	padding-left: 15px;
+	padding-right: 15px;
+	color: #72ab7b;
+	font-weight: bold;
+	font-size: 20px;
+}
+/*Newsletter Section */
+
+}
+.newsletter-section {
+	margin: 40px 0 40px 50px;
+}
+
+.newsletter-section p{
+	text-align: center;
+}
 
 .firstp{
 	border-left: 3px solid #bdc3c7;
-
 	padding-left: 5px;
 	padding-right: 15;
 	margin-left: 20px;
@@ -58,6 +75,9 @@ nav ul li a {
 p{
 	padding-left: 15px;
 	padding-right: 15px;
+	color: #72ab7b;
+	font-weight: regular;
+	font-size: 20px;
 
 }
 /*date*/
@@ -68,6 +88,7 @@ h4 {
 	color: #3498db;
 	letter-spacing: 2px ;
 	font-size: 10px;
+	color: #537c59;
 }
 
 /*article title*/
@@ -76,7 +97,7 @@ h2{
 	padding-left: 20px;
 	text-transform: capitalize;
 	font-weight: bold;
-	color: #2c3e50;
+	color: #537c59;
 	font-size: 2.0rem;
 }
 

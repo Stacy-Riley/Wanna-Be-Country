@@ -104,6 +104,10 @@ h2{
 hr{
 	padding-left: 20px;
 	padding-left: 20px;
-	color: #bdc3c7;
-	
+	color: #bdc3c7;	
+}
+#copyright {
+	text-align: center;
+	font-size: 15px;
+	margin: 50px 0 10px 0;
 }

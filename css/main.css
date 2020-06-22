@@ -30,7 +30,7 @@ nav ul li a {
     text-transform: uppercase;
     text-decoration: none;
     font-size: 18px;
-    color: #828282;
+    color: #6E6E6E;
     padding-left: 20px;
     padding-right: 10px;
     font-weight: bold;
@@ -50,7 +50,7 @@ nav ul li a {
 .display-subtitle {
 	padding-left: 15px;
 	padding-right: 15px;
-	color: #72ab7b;
+	color: #43704D;
 	font-weight: bold;
 	font-size: 20px;
 }
@@ -58,9 +58,14 @@ nav ul li a {
 
 }
 .newsletter-section {
-	margin: 40px 0 40px 50px;
+	margin: 40px 0 10px 50px;
 }
 
+hr {
+	margin-top: 40px;
+	border: 3px solid #bdc3c7;
+	border-radius: 5px;
+}
 .newsletter-section p{
 	text-align: center;
 }
@@ -75,7 +80,7 @@ nav ul li a {
 p{
 	padding-left: 15px;
 	padding-right: 15px;
-	color: #72ab7b;
+	color: #43704D;
 	font-weight: regular;
 	font-size: 20px;
 
@@ -85,10 +90,10 @@ h4 {
 	padding-left: 15px;
 	padding-left: 15px;
 	text-transform: uppercase;
-	color: #3498db;
+	color: #43704D;
 	letter-spacing: 2px ;
-	font-size: 10px;
-	color: #537c59;
+	font-size: 13px;
+	color: #43704D;
 }
 
 /*article title*/
@@ -97,14 +102,14 @@ h2{
 	padding-left: 20px;
 	text-transform: capitalize;
 	font-weight: bold;
-	color: #537c59;
+	color: #43704D;
 	font-size: 2.0rem;
 }
 
 hr{
 	padding-left: 20px;
 	padding-left: 20px;
-	color: #bdc3c7;	
+	color: #43704D;	
 }
 #copyright {
 	text-align: center;

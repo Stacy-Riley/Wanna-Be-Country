@@ -1,3 +1,7 @@
+body {
+
+}
+
 /*Admin Navbar */
 header {
 	display: flex;
@@ -71,10 +75,10 @@ header {
 	background-color: #5F9EA0;
 	border-radius: 10px; /*curved edges around button */
 	letter-spacing: 1.2px;
-	padding: 15px;
+	padding: 10px;
 	text-decoration: none;
 	margin-right: 25px;
-	color: black;
+	color: aliceblue;
 }
 
 .btn:hover {
@@ -120,6 +124,23 @@ th, td {
 }
 .publish:hover {
 	text-decoration: underline;
+}
+
+/* Add Post -Form Styling */
+
+form div {
+	padding-bottom: 15px;
+}
+
+/*Box styling */
+.text-input {
+	width: 800px;
+	height: 30px;	
+}
+
+label {
+	font-size: 18px;
+	margin-bottom: 5px;
 }
 
 

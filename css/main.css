@@ -106,8 +106,18 @@ hr{
 	padding-left: 20px;
 	color: #bdc3c7;	
 }
+
 #copyright {
 	text-align: center;
 	font-size: 15px;
 	margin: 50px 0 10px 0;
 }
+
+ /* Style adjustments for tablets */
+@media only screen and (min-width: 768px) {
+    /* General styles */
+
+
+ /* Style adjustments for desktop */
+@media only screen and (min-width: 1200px) {
+    header {

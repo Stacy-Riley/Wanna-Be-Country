@@ -1,96 +1,88 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<!-- Needed for media queries to function -->
+	<!-- Font Awsome -->
 	<script src="https://kit.fontawesome.com/c834aede1d.js" crossorigin="anonymous"></script>
-	<meta content="width=device-width, initial-scale=1" name="viewport" />
 <style type="text/css">
-	@import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@400;800&display=swap');
+	/* Needed for media queries to function */
+	<meta content="width=device-width, initial-scale=1" name="viewport" />
+	@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Indie+Flower&family=Varela+Round&display=swap');
+
 * {
 	margin: 0;
 	border: 0;
 	padding: 0;
 }
+
 body {
-	font-family: 'Catamaran', sans-serif;
+	font-family: 'Varela Round', sans-serif;
 	background-color: #d8dbdb;
-	font-size: 18px;
+	font-size: 16px;
 	max-width: 800px;
 	margin: 0 auto;
-	
 	color: #565859; 
 }
+
 #wrapper {
 	background-color: #f6faff;
 	padding: 2%;
 }
 
-.header-containger {
+.header-container {
 	width: 98%;
 	display: flex;
-	justify-content: center;
-	align-items: center;
-	flex-flow: column wrap;
+	justify-content: space-around;
+	align-items: space-around;
+	flex-flow: row wrap;
 }
+
 #logo {
-	flex: 1;
-	/*max-width: 220px;*/
-	/*margin:  2% 0 0 5%;*/
-	/*float: left;*/
+	font-size: 1.6em;
+	font-family: 'Architects Daughter', cursive;
+	font-weight: bold;
 }
 
 #callout {
-	flex: 2;
-	/*float: right;*/
-	/*margin: 3% 2% 2% 0;*/
+	margin-top: 2%;
 }
 
 .social {
-	/*float: right;*/
 	list-style-type: none;
 }
+
 .social li {
 	display: inline;
-	margin-top: 8%;
-}
-.social li a {
-	font-size: 2em;
+	
 }
 
-.banner-container {
-	/*position: relative;
-	padding-top: 56.25%
-*/
+.social li a {
+	font-size: 1.75em;
 }
 
 .banner-container img {
-	/*position: absolute;
-	left: 0;
-	right: 0;
-	top: 0;
-	width: 100%;
-	height: auto;
-	*/
 	object-fit: cover;
 	width: 100%;
 	height: 300px;
 }
 
-.one-cal {
+.one-col {
 	padding: 2%;
 }
 
 h1 {
-	letter-spacing: 1px;
+	letter-spacing: 0px;
+	font-size: 2em;
 }
 
 p {
 	text-align: justify;
 }
+
 .button-holder {
 	float: right;
-	margin: 0 2% 4% 0;
+	margin: 1% 2% 4% 0;
 }
+
 .btn {
 	float: right;
 	background: #303840;
@@ -101,9 +93,11 @@ p {
 	border-radius: 8px;
 	letter-spacing: 1px;
 }
+
 .btn:hover {
 	background: #58585A;
 }
+
 .line {
 	/*use clear so that nothing goes beside it */
 	clear: both;
@@ -112,26 +106,53 @@ p {
 	margin: 4% auto;
 	width: 96%;
 }
+
 .two-col {
 	float: left;
 	width: 46%;
 	padding: 2%;
 }
+
 a {
 	color: #607cc3;
 	text-decoration: none;
 }
+
 a:hover {
 	font-weight: bold;
 }
+
 .contact {
 	text-align: center;
 	padding-bottom: 3%;
 }
 
 @media only screen and (max-width: 600px){
+	#logo {
+	font-size: .8em;
+	margin-top: 2%;
+	padding: 0;
+	height: auto;
+	}
+	#callout {
+	margin-top: 0%;
+	margin-bottom: 2%;
+	font-size: 1.2em;
+	}
+	.social li a {
+	font-size: 1em;
+	}
+	.banner-container img {
+	height: 150px;
+	}
+	h1{
+	/*font-size: 2em;*/
+	}
+	.one-col {
+	padding: 3%;
+	}
 	.two-col {
-		width: 80%!important;
+	width: 96%;
 	}
 }
 
@@ -142,9 +163,8 @@ a:hover {
 	<div id="wrapper">
 		<header class="header-container">
 			<div id="logo">
-				<h1><i class="fas fa-sun"></i>CR Off Grid Living</h1><br>
-				<!--<img src="https://www.croffgridliving.com/uploads/nader-arman-yzmWiPmb7v4-unsplash.jpg">
-				img will need to be in upload folder and online, -->
+				<!--Any future logo or image will need to be in upload folder and online for it to display in email -->
+				<h1><i class="fas fa-sun"></i> CR Off Grid Living</h1><br>
 			</div>
 			<div id="callout">
 				<ul class="social">
@@ -164,9 +184,8 @@ a:hover {
 			</div>
 		</header>
 		<div class="banner-container">
-			
+				<!--Any future logo or image will need to be in upload folder and online for it to display in email -->
 				<img src="../uploads/nader-arman-yzmWiPmb7v4-unsplash.jpg" alt="banner">
-			
 		</div>
 		<div class="one-col">
 			<h1>Heading Message Goes Here!</h1>
@@ -182,13 +201,15 @@ a:hover {
 
 		<div class="two-col">
 			<h2>Latest Video Release</h2>
-			<img src="https://www.croffgridliving.com/uploads/filename-here.png">
+			<!--Any future logo or image will need to be in upload folder and online for it to display in email -->
+			<img src="https://www.croffgridliving.com/uploads/filename-here.png" alt="you-tube video">
 			<p>In this month's newsletter we'll learn how to set calculate the amout of energy your solar powered system needs to create to meet all the electricity needs of your home.</p>
 			<a href="#" target="_blank">Check out the article here...</a>
 		</div>
 		<div class="two-col">
 			<h2>Latest Video Release</h2>
-			<img src="https://www.croffgridliving.com/uploads/filename-here.png">
+			<!--Any future logo or image will need to be in upload folder and online for it to display in email -->
+			<img src="https://www.croffgridliving.com/uploads/filename-here.png" alt="you-tube video">
 			<p>In this month's newsletter we'll learn how to set calculate the amout of energy your solar powered system needs to create to meet all the electricity needs of your home.</p>
 			<a href="#" target="_blank">Check out the article here...</a>
 		</div>

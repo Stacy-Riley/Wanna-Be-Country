@@ -3,6 +3,7 @@
 <head>
 	<!-- Font Awsome -->
 	<script src="https://kit.fontawesome.com/c834aede1d.js" crossorigin="anonymous"></script>
+<!--Beginning of Styles Section -->	
 <style type="text/css">
 	/* Needed for media queries to function */
 	<meta content="width=device-width, initial-scale=1" name="viewport" />
@@ -16,6 +17,7 @@
 
 body {
 	font-family: 'Varela Round', sans-serif;
+	/**Change here for side of email background color **/
 	background-color: #d8dbdb;
 	font-size: 16px;
 	max-width: 800px;
@@ -24,6 +26,7 @@ body {
 }
 
 #wrapper {
+	/**Change here for main email background color where content is **/
 	background-color: #f6faff;
 	padding: 2%;
 }
@@ -52,7 +55,6 @@ body {
 
 .social li {
 	display: inline;
-	
 }
 
 .social li a {
@@ -108,9 +110,19 @@ p {
 }
 
 .two-col {
-	float: left;
-	width: 46%;
-	padding: 2%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-flow: row wrap;
+}
+
+.col-1 {
+	flex: 1;
+	margin-right: 1%;
+}
+.col-2{
+	flex: 1;
+	margin-left: 1%;
 }
 
 a {
@@ -125,8 +137,10 @@ a:hover {
 .contact {
 	text-align: center;
 	padding-bottom: 3%;
+	line-height: 30px;
 }
 
+/*Mobil Screen Size */
 @media only screen and (max-width: 600px){
 	#logo {
 	font-size: .8em;
@@ -145,19 +159,18 @@ a:hover {
 	.banner-container img {
 	height: 150px;
 	}
-	h1{
-	/*font-size: 2em;*/
-	}
 	.one-col {
 	padding: 3%;
 	}
+/* section to work on in mobil size, make stacked */
 	.two-col {
-	width: 96%;
+	/*width: 96%;*/
+	flex-flow: row wrap;
 	}
-}
 
+}
 </style>
-<!-- www.youtube.com/watch?v=L1Rv2J0JaZ4 -->
+<!-- End of Style Section -->
 </head>
 <body>
 	<div id="wrapper">
@@ -200,28 +213,51 @@ a:hover {
 		<div class="line"></div>
 
 		<div class="two-col">
-			<h2>Latest Video Release</h2>
-			<!--Any future logo or image will need to be in upload folder and online for it to display in email -->
-			<img src="https://www.croffgridliving.com/uploads/filename-here.png" alt="you-tube video">
-			<p>In this month's newsletter we'll learn how to set calculate the amout of energy your solar powered system needs to create to meet all the electricity needs of your home.</p>
-			<a href="#" target="_blank">Check out the article here...</a>
-		</div>
-		<div class="two-col">
-			<h2>Latest Video Release</h2>
-			<!--Any future logo or image will need to be in upload folder and online for it to display in email -->
-			<img src="https://www.croffgridliving.com/uploads/filename-here.png" alt="you-tube video">
-			<p>In this month's newsletter we'll learn how to set calculate the amout of energy your solar powered system needs to create to meet all the electricity needs of your home.</p>
-			<a href="#" target="_blank">Check out the article here...</a>
-		</div>
+			<div class="col-1">
+				<h2>Latest Video Release</h2>
+			
+				<!-- Copy youtube embed code, paste into http://embedresponsively.com/ then replace the below code -->
+			
+				<!-- Video Code starts below here -->
+				<style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style><div class='embed-container'><iframe width='560' height='315' src='https://www.youtube.com/embed/PVnQ87Fvsk4' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture' allowfullscreen></iframe></div>
+				<!--Ends here-->
+
+				<!-- Image Code starts here -->
+				<!--
+				<img src="https://www.croffgridliving.com/uploads/filename-here.png" alt="Name your image here">
+				-->
+				<!--Image Code ends here -->
+			
+				<p>In this month's newsletter we'll learn how to set calculate the amout of energy your solar powered system needs to create to meet all the electricity needs of your home.</p>
+				<a href="#" target="_blank">Check out the article here...</a> 
+				</div>
+			<div class="col-2">
+				<h2>Latest Video Release</h2>
+
+				<!-- Copy youtube embed code, paste into http://embedresponsively.com/ then replace the below code -->
+			
+				<!-- Video Code starts below here -->
+				<style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style><div class='embed-container'><iframe width='560' height='315' src='https://www.youtube.com/embed/PVnQ87Fvsk4' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture' allowfullscreen></iframe></div>
+				<!--Ends here-->
+
+				<!-- Image Code starts here -->
+				<!--
+				<img src="https://www.croffgridliving.com/uploads/filename-here.png" alt="Name your image here">
+				-->
+				<!--Image Code ends here -->
+
+				<p>In this month's newsletter we'll learn how to set calculate the amout of energy your solar powered system needs to create to meet all the electricity needs of your home.</p>
+				<a href="#" target="_blank">Check out the article here...</a> 
+			</div>
+		</div> <!--End of class two-col -->
 
 		<div class="line"></div>
 
 		<p class="contact">
-			CRoffgridliving.com<br>
-			contact@croffgridliving.com
-
+			contact@croffgridliving.com 
+			<br>
+			If you wish to unsubscribe from this email please <a href="%unsubscribe%">unsubscribe here.</a>
 		</p>
-
 	</div><!-- End Wrapper -->
 </body>
 </html>

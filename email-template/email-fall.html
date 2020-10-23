@@ -3,12 +3,17 @@
 <head>
 	<!-- Font Awsome -->
 	<script src="https://kit.fontawesome.com/c834aede1d.js" crossorigin="anonymous"></script>
+	<meta charset="UTF-8">
+	<meta content="width=device-width, initial-scale=1" name="viewport" />
 <!--Beginning of Styles Section -->	
 <style type="text/css">
 	/* Needed for media queries to function */
-	<meta content="width=device-width, initial-scale=1" name="viewport" />
+	@charset "UTF-8"
 	@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Indie+Flower&family=Varela+Round&display=swap');
+	
+/***************************************************/
 /** Mobil Styles First **/
+/***************************************************/
 html {
 	margin: 0;
 	border: 0;
@@ -18,17 +23,23 @@ html {
 
 body {
 	font-family: 'Varela Round', sans-serif;
+	/***************************************************/
 	/**Change here for side of email background color **/
 	background-color: #d8dbdb;
+	/***************************************************/
 	margin: 0 auto;
 	color: #565859;
+	/***************************************************/
 	/** Controls the amount of edging on sides of message **/
 	padding: 0 10%; 
+	/***************************************************/
 }
 
 #wrapper {
+	/***************************************************/
 	/**Change here for background color where content is **/
 	background-color: #f6faff;
+	/***************************************************/
 	padding: 2%;
 }
 
@@ -110,29 +121,10 @@ p {
 	width: 96%;
 }
 
-.two-col {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	flex-flow: column wrap;	
-}
-
-.first-video {
-	flex-shrink: 1;
-}
-
-.second-video {
-	flex-shrink: 1;
-}
-
-.two-col p {
-	font-size: 1.5em;
-}
-
 a {
 	color: #607cc3;
 	text-decoration: none;
-	font-size: 2em;
+	font-size: 1.5em;
 }
 
 a:hover {
@@ -159,6 +151,7 @@ a:hover {
 	max-width: 100%; 
 } 
 
+/*Youtube video styles */
 .embed-container iframe, 
 .embed-container object, 
 .embed-container embed { 
@@ -168,47 +161,54 @@ a:hover {
 	height: 100%; 
 }
 
-/* Tablet Screen and larger */
+/***************************************************/
+/* Tablet-Sized Screen and larger */
+/***************************************************/
 @media only screen and (min-width: 768px){
+	h1 {
+	margin-bottom: 0;
+	margin-top: 2%;
+	padding-bottom: 0;
+	}
 	#callout {
-	margin-top: 5%;
+	margin-bottom: 2%;
+	margin-top: 0;
+	padding-top: 0;
 	}
 	p {
-	text-align: justify;
 	font-size: 1em;
 	}
 	.line {
 	margin: 3% auto;
 	}
-
 	.button-holder {
 	margin: 1% 1% 2% 0;
 	}
-
+	/**Parent Containger**/
 	.two-col {
 	display: flex;
-	justify-content: space-around;
-	align-items: center;
-	flex-flow: row wrap;
 	}
-
+	.two-col h2 {
+	margin: 0;
+	font-size: 1.7em;
+	}
+	/**Child 1**/
 	.first-video {
 	flex: 1;
+	padding-right: 10px;
 	}
-
-	.second-video {
+	/**Child 2**/
+	.second-video {	
 	flex: 1;
+	padding-left: 10px;
 	}
-
 	.two-col a {
 	font-size: 1em;
 	}
-
 	.two-col p {
 	font-size: 1em;
 	}
 }
-
 </style>
 <!-- End of Style Section -->
 </head>
@@ -257,9 +257,13 @@ a:hover {
 				<!-- Copy youtube embed code, paste into http://embedresponsively.com/ then replace the below code -->
 			
 				<!-- Video Code starts below here -->
-				<div class='embed-container first-video'>
+			<div class="first-video">
 					<h2>Latest Video Release</h2>
-					<iframe width='560' height='315' src='https://www.youtube.com/embed/PVnQ87Fvsk4' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture' allowfullscreen></iframe>
+					<div class="embed-container">
+						<iframe width='560' height='315' src='https://www.youtube.com/embed/PVnQ87Fvsk4' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture' allowfullscreen>
+						</iframe>
+					</div>
+					
 
 				<!--Ends here-->
 
@@ -278,9 +282,12 @@ a:hover {
 			
 				<!-- Video Code starts below here -->
 				
-				<div class='embed-container second-video'>
+				<div class="second-video">
 					<h2>Latest Video Release</h2>
-					<iframe width='560' height='315' src='https://www.youtube.com/embed/PVnQ87Fvsk4' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture' allowfullscreen></iframe>
+					<div class="embed-container">
+						<iframe width='560' height='315' src='https://www.youtube.com/embed/PVnQ87Fvsk4' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture' allowfullscreen>
+						</iframe>
+					</div>
 
 				<!--Ends here-->
 
